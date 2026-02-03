@@ -1,0 +1,43 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  
+  {
+    "title": "SQL",
+    "imageSrc": "skills/database.png"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
+  },
+  {
+    "title": "SpringBoot",
+    "imageSrc": "skills/springboot.png"
+  },
+  {
+    "title": "Hibernate",
+    "imageSrc": "skills/hibernate.png"
+  },
+  {
+    "title": "Rest API",
+    "imageSrc": "skills/rest-api.png"
+  },
+  {
+    "title": "Microservices",
+    "imageSrc": "skills/microservices.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/github.png"
+  }
+]

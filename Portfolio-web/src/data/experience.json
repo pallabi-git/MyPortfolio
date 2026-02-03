@@ -1,0 +1,46 @@
+[
+  {
+    "role": "Software Engineer",
+    "organisation": "Capgemini",
+    "startDate": "Jan, 2022",
+    "endDate": "Present",
+    "experiences": [
+      "Build and maintain scalable backend systems using Java & Spring Boot",
+      "Create clean, reliable REST APIs for smooth data flow",
+      "Develop backend features for the Liberty Spain project",
+      "Improve performance by debugging and optimizing existing code",
+      "Validate and document APIs with Swagger & Postman",
+      "Work in Agile sprints using Jira to deliver features efficiently"
+    ],
+    "imageSrc": "history/capgemini.png",
+    "id": 1
+  },
+  {
+    "role": "Software Developer",
+    "organisation": "Keross R&D",
+    "startDate": "Nov, 2019",
+    "endDate": "Dec, 2021",
+    "experiences": [
+      "Built a global resource management platform using React JS",
+      "Integrated Java + Spring Boot + MySQL backend services",
+      "Created analytics dashboards with Kendo UI & amCharts",
+      "Developed reusable UI components to speed up development",
+      "Handled API integration and added frontend validation"
+    ],
+    "imageSrc": "history/keross.png",
+    "id": 2
+  },
+  {
+    "role": "SWE Intern",
+    "organisation": "Keross R&D",
+    "startDate": "May, 2019",
+    "endDate": "Oct, 2019",
+    "experiences": [
+      "Built responsive pages using HTML, CSS & Bootstrap 4",
+      "Added dynamic UI behavior with jQuery & JavaScript",
+      "Developed a system to track employee attendance & device services"
+    ],
+    "imageSrc": "history/keross.png",
+    "id": 3
+  }
+]
