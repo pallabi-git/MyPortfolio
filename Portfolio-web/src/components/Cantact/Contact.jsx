@@ -10,27 +10,44 @@ const PUBLIC_KEY = "KKZ8zSCIkKLhIAc7y";
 export default function Contact() {
   const formRef = useRef();
 
-  const messageTemplate = {
-    from_name:
-      formRef.current?.from_first_name + " " + formRef.current?.from_last_name,
-    from_email: formRef.current?.from_email,
-    from_company: formRef.current?.from_company,
-    subject: formRef.current?.subject,
-    message: formRef.current?.message,
-  };
-
-  const sendEmail = (e) => {
+  /*const sendEmail = (e) => {
     e.preventDefault();
-    console.log("Sending email...", formRef.current);
+    console.log("Sending email...");
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY).then(
-      () => {
-        console.log("SUCCESS!");
+      (result) => {
+        console.log("Email sent successfully:", result.text);
         formRef.current.reset();
       },
       (error) => {
-        console.log("FAILED...", error);
+        console.log("Email sending failed:", error);
       },
     );
+  };*/
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    const payload = {
+      from_name: formRef.current.from_name.value,
+      from_email: formRef.current.from_email.value,
+      from_company: formRef.current.from_company.value,
+      subject: formRef.current.subject.value,
+      message: formRef.current.message.value,
+    };
+
+    const res = await fetch("/.netlify/functions/sendEmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (res.ok) {
+      console.log("Email sent!");
+      formRef.current.reset();
+    } else {
+      console.error("Email failed.");
+    }
   };
 
   return (
